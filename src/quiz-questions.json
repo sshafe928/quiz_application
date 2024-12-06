@@ -1,0 +1,131 @@
+{
+    "questions": [
+        {
+            "id": 1,
+            "prompt": "What is the capital of France?",
+            "choices": ["London", "Berlin", "Paris", "Madrid"],
+            "correctAnswer": "Paris"
+        },
+        {
+            "id": 2,
+            "prompt": "Which planet is known as the Red Planet?",
+            "choices": ["Venus", "Mars", "Jupiter", "Saturn"],
+            "correctAnswer": "Mars"
+        },
+        {
+            "id": 3,
+            "prompt": "Which element has the chemical symbol 'O'?",
+            "choices": ["Oxygen", "Osmium", "Ozone", "Oganesson"],
+            "correctAnswer": "Oxygen"
+        },
+        {
+            "id": 4,
+            "prompt": "Who invented the telephone?",
+            "choices": ["Thomas Edison", "Alexander Graham Bell", "Nikola Tesla", "Benjamin Franklin"],
+            "correctAnswer": "Alexander Graham Bell"
+        },
+        {
+            "id": 5,
+            "prompt": "What is the largest continent by land area?",
+            "choices": ["Africa", "Asia", "Europe", "North America"],
+            "correctAnswer": "Asia"
+        },
+        {
+            "id": 6,
+            "prompt": "What is the smallest planet in our solar system?",
+            "choices": ["Mercury", "Mars", "Venus", "Pluto"],
+            "correctAnswer": "Mercury"
+        },
+        {
+            "id": 7,
+            "prompt": "What is the boiling point of water in Celsius?",
+            "choices": ["90°C", "100°C", "110°C", "120°C"],
+            "correctAnswer": "100°C"
+        },
+        {
+            "id": 8,
+            "prompt": "What is the largest organ in the human body?",
+            "choices": ["Heart", "Liver", "Skin", "Lung"],
+            "correctAnswer": "Skin"
+        },
+        {
+            "id": 9,
+            "prompt": "Which country is known as the Land of the Rising Sun?",
+            "choices": ["South Korea", "China", "Japan", "Thailand"],
+            "correctAnswer": "Japan"
+        },
+        {
+            "id": 10,
+            "prompt": "In which city would you find the Colosseum?",
+            "choices": ["Rome", "Athens", "Paris", "London"],
+            "correctAnswer": "Rome"
+        },
+        {
+            "id": 11,
+            "prompt": "What is the longest river in the world?",
+            "choices": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+            "correctAnswer": "Amazon"
+        },
+        {
+            "id": 12,
+            "prompt": "What is the chemical symbol for water?",
+            "choices": ["H2O", "CO2", "O2", "H2O2"],
+            "correctAnswer": "H2O"
+        },
+        {
+            "id": 13,
+            "prompt": "Who painted the Mona Lisa?",
+            "choices": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+            "correctAnswer": "Leonardo da Vinci"
+        },
+        {
+            "id": 14,
+            "prompt": "What is the capital of Canada?",
+            "choices": ["Vancouver", "Ottawa", "Toronto", "Montreal"],
+            "correctAnswer": "Ottawa"
+        },
+        {
+            "id": 15,
+            "prompt": "Which animal is known for its ability to change color?",
+            "choices": ["Chameleon", "Octopus", "Cuttlefish", "Squid"],
+            "correctAnswer": "Chameleon"
+        },
+        {
+            "id": 16,
+            "prompt": "How many continents are there?",
+            "choices": ["5", "6", "7", "8"],
+            "correctAnswer": "7"
+        },
+        {
+            "id": 17,
+            "prompt": "Which is the largest desert in the world?",
+            "choices": ["Sahara", "Kalahari", "Gobi", "Antarctic Desert"],
+            "correctAnswer": "Antarctic Desert"
+        },
+        {
+            "id": 18,
+            "prompt": "What is the main ingredient in guacamole?",
+            "choices": ["Tomato", "Avocado", "Onion", "Cilantro"],
+            "correctAnswer": "Avocado"
+        },
+        {
+            "id": 19,
+            "prompt": "What is the currency of Japan?",
+            "choices": ["Yuan", "Won", "Yen", "Ringgit"],
+            "correctAnswer": "Yen"
+        },
+        {
+            "id": 20,
+            "prompt": "What is the largest mammal in the world?",
+            "choices": ["Elephant", "Blue Whale", "Giraffe", "Hippopotamus"],
+            "correctAnswer": "Blue Whale"
+        },
+        {
+            "id": 21,
+            "bonusQuestion": true,
+            "prompt": "What is the chemical symbol for gold?",
+            "choices": ["Ag", "Fe", "Au", "Cu"],
+            "correctAnswer": "Au"
+        }
+    ]
+}
