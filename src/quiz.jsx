@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import questionsData from './quiz-questions.json';
 import './quiz.css';
 
@@ -36,6 +36,7 @@ const QuizApp = () => {
 
   const handleBonusQuestion = (answer) => {
     const isCorrect = answer === bonusQuestion.correctAnswer;
+
     
     if (isCorrect) {
       setScore(prevScore => prevScore + 2);
@@ -43,7 +44,18 @@ const QuizApp = () => {
       setScore(prevScore => Math.max(0, prevScore - 1));
     }
 
-    setQuizCompleted(true);
+    setQuizCompleted(true);  
+    setShowFeedback(true);   
+    setSelectedAnswer(answer);  
+  };
+
+  const restartQuiz = () => {
+    // Reset all states to restart the quiz
+    setCurrentQuestionIndex(0);
+    setSelectedAnswer(null);
+    setScore(0);
+    setShowFeedback(false);
+    setQuizCompleted(false);
   };
 
   const renderQuizContent = () => {
@@ -52,6 +64,8 @@ const QuizApp = () => {
         <div className="quiz-complete">
           <h2>Quiz Completed!</h2>
           <p>Your Total Score: {score} / {questions.length + 2}</p>
+          
+          {/* Display bonus question and answer choices */}
           {bonusQuestion && (
             <div className="bonus-section">
               <h3>Bonus Question</h3>
@@ -67,6 +81,10 @@ const QuizApp = () => {
               ))}
             </div>
           )}
+          {/* Restart button to restart the quiz */}
+          <button onClick={restartQuiz} className="restart-quiz-btn">
+            Restart Quiz
+          </button>
         </div>
       );
     }
@@ -89,12 +107,10 @@ const QuizApp = () => {
             <button
               key={choice}
               onClick={() => handleAnswerSelect(choice)}
-              disabled={showFeedback}
-              className={`
-                choice-btn 
-                ${showFeedback && choice === currentQuestion.correctAnswer ? 'correct' : ''}
-                ${showFeedback && selectedAnswer === choice && choice !== currentQuestion.correctAnswer ? 'incorrect' : ''}
-              `}
+              disabled={showFeedback} 
+              className={`choice-btn 
+                ${showFeedback && choice === currentQuestion.correctAnswer ? 'correct' : ''} 
+                ${showFeedback && selectedAnswer === choice && choice !== currentQuestion.correctAnswer ? 'incorrect' : ''}`}
             >
               {choice}
             </button>
