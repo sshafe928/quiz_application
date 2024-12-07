@@ -40,13 +40,13 @@ const QuizApp = () => {
     
     if (isCorrect) {
       setScore(prevScore => prevScore + 2);
+      setSelectedAnswer(answer);
     } else {
       setScore(prevScore => Math.max(0, prevScore - 1));
+      setSelectedAnswer(answer);
     }
 
-    setQuizCompleted(true);  
-    setShowFeedback(true);   
-    setSelectedAnswer(answer);  
+    setQuizCompleted(true);    
   };
 
   const restartQuiz = () => {
